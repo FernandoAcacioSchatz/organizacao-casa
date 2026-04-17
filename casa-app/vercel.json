@@ -1,0 +1,19 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "rewrites": [
+    { "source": "/api/auth/register", "destination": "/api/auth/register" },
+    { "source": "/api/auth/login",    "destination": "/api/auth/login"    },
+    { "source": "/api/auth/me",       "destination": "/api/auth/me"       },
+    { "source": "/api/casas/:id",     "destination": "/api/casas/[id]"    },
+    { "source": "/api/casas",         "destination": "/api/casas/index"   },
+    { "source": "/api/setores/:id",   "destination": "/api/setores/[id]"  },
+    { "source": "/api/setores",       "destination": "/api/setores/index" },
+    { "source": "/api/intervalos/:id","destination": "/api/intervalos/[id]"  },
+    { "source": "/api/intervalos",    "destination": "/api/intervalos/index" },
+    { "source": "/api/tarefas/:id",   "destination": "/api/tarefas/[id]"  },
+    { "source": "/api/tarefas",       "destination": "/api/tarefas/index" },
+    { "source": "/api/concluidas",    "destination": "/api/concluidas/index" },
+    { "source": "/(.*)",              "destination": "/index.html"        }
+  ]
+}
